@@ -1,0 +1,16 @@
+apps: # app binary names for volume sliders
+    app3: brave
+    app4: chrome
+    app5: Discord
+    app6:
+    app7:
+    app8:
+outputs: # switch between speakers and headphones
+    speakers: alsa_output.pci-0000_03_00.1.hdmi-stereo-extra2
+    headphones: bluez_output.DC_F4_CA_C0_B0_2F.1
+mqtt: # mqtt address for connection
+    address: 10.5.0.5
+    port: 1883
+midi: # ALSA midi device id
+    input: "(b'ALSA', b'nanoKONTROL2 nanoKONTROL2 _ CTR', 1, 0, 0)"
+    output: "(b'ALSA', b'nanoKONTROL2 nanoKONTROL2 _ CTR', 0, 1, 0)"
